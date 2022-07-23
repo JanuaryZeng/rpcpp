@@ -72,4 +72,5 @@ int Message::HeaderPack(int n)
     buf[MSG_HEADLEN] = '\0';
     for (int i = 0; i < static_cast<int>(MSG_HEADLEN); ++i)
         msg.push_back(buf[i]);
+    return 0;
 }
