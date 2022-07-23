@@ -72,46 +72,206 @@ CMAKE_BINARY_DIR = /home/zxj/project/job_related/rpcpp/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/rpcpp.dir/all
+all: rpcpp/all
+all: example/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: rpcpp/preinstall
+preinstall: example/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/rpcpp.dir/clean
+clean: rpcpp/clean
+clean: example/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/rpcpp.dir
+# Directory level rules for directory example
+
+# Recursive "all" directory target.
+example/all: example/echo/all
+
+.PHONY : example/all
+
+# Recursive "preinstall" directory target.
+example/preinstall: example/echo/preinstall
+
+.PHONY : example/preinstall
+
+# Recursive "clean" directory target.
+example/clean: example/echo/clean
+
+.PHONY : example/clean
+
+#=============================================================================
+# Directory level rules for directory example/echo
+
+# Recursive "all" directory target.
+example/echo/all: example/echo/CMakeFiles/echoClient.dir/all
+example/echo/all: example/echo/CMakeFiles/echoService.dir/all
+
+.PHONY : example/echo/all
+
+# Recursive "preinstall" directory target.
+example/echo/preinstall:
+
+.PHONY : example/echo/preinstall
+
+# Recursive "clean" directory target.
+example/echo/clean: example/echo/CMakeFiles/echoClient.dir/clean
+example/echo/clean: example/echo/CMakeFiles/echoService.dir/clean
+
+.PHONY : example/echo/clean
+
+#=============================================================================
+# Directory level rules for directory rpcpp
+
+# Recursive "all" directory target.
+rpcpp/all: rpcpp/CMakeFiles/rpcpp.dir/all
+rpcpp/all: rpcpp/stub/all
+
+.PHONY : rpcpp/all
+
+# Recursive "preinstall" directory target.
+rpcpp/preinstall: rpcpp/stub/preinstall
+
+.PHONY : rpcpp/preinstall
+
+# Recursive "clean" directory target.
+rpcpp/clean: rpcpp/CMakeFiles/rpcpp.dir/clean
+rpcpp/clean: rpcpp/stub/clean
+
+.PHONY : rpcpp/clean
+
+#=============================================================================
+# Directory level rules for directory rpcpp/stub
+
+# Recursive "all" directory target.
+rpcpp/stub/all: rpcpp/stub/CMakeFiles/rpcppstub.dir/all
+
+.PHONY : rpcpp/stub/all
+
+# Recursive "preinstall" directory target.
+rpcpp/stub/preinstall:
+
+.PHONY : rpcpp/stub/preinstall
+
+# Recursive "clean" directory target.
+rpcpp/stub/clean: rpcpp/stub/CMakeFiles/rpcppstub.dir/clean
+
+.PHONY : rpcpp/stub/clean
+
+#=============================================================================
+# Target rules for target rpcpp/CMakeFiles/rpcpp.dir
 
 # All Build rule for target.
-CMakeFiles/rpcpp.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpcpp.dir/build.make CMakeFiles/rpcpp.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpcpp.dir/build.make CMakeFiles/rpcpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zxj/project/job_related/rpcpp/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target rpcpp"
-.PHONY : CMakeFiles/rpcpp.dir/all
+rpcpp/CMakeFiles/rpcpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f rpcpp/CMakeFiles/rpcpp.dir/build.make rpcpp/CMakeFiles/rpcpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f rpcpp/CMakeFiles/rpcpp.dir/build.make rpcpp/CMakeFiles/rpcpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zxj/project/job_related/rpcpp/cmake-build-debug/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target rpcpp"
+.PHONY : rpcpp/CMakeFiles/rpcpp.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/rpcpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zxj/project/job_related/rpcpp/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rpcpp.dir/all
+rpcpp/CMakeFiles/rpcpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zxj/project/job_related/rpcpp/cmake-build-debug/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rpcpp/CMakeFiles/rpcpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zxj/project/job_related/rpcpp/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/rpcpp.dir/rule
+.PHONY : rpcpp/CMakeFiles/rpcpp.dir/rule
 
 # Convenience name for target.
-rpcpp: CMakeFiles/rpcpp.dir/rule
+rpcpp: rpcpp/CMakeFiles/rpcpp.dir/rule
 
 .PHONY : rpcpp
 
 # clean rule for target.
-CMakeFiles/rpcpp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpcpp.dir/build.make CMakeFiles/rpcpp.dir/clean
-.PHONY : CMakeFiles/rpcpp.dir/clean
+rpcpp/CMakeFiles/rpcpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f rpcpp/CMakeFiles/rpcpp.dir/build.make rpcpp/CMakeFiles/rpcpp.dir/clean
+.PHONY : rpcpp/CMakeFiles/rpcpp.dir/clean
+
+#=============================================================================
+# Target rules for target rpcpp/stub/CMakeFiles/rpcppstub.dir
+
+# All Build rule for target.
+rpcpp/stub/CMakeFiles/rpcppstub.dir/all:
+	$(MAKE) $(MAKESILENT) -f rpcpp/stub/CMakeFiles/rpcppstub.dir/build.make rpcpp/stub/CMakeFiles/rpcppstub.dir/depend
+	$(MAKE) $(MAKESILENT) -f rpcpp/stub/CMakeFiles/rpcppstub.dir/build.make rpcpp/stub/CMakeFiles/rpcppstub.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zxj/project/job_related/rpcpp/cmake-build-debug/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31 "Built target rpcppstub"
+.PHONY : rpcpp/stub/CMakeFiles/rpcppstub.dir/all
+
+# Build rule for subdir invocation for target.
+rpcpp/stub/CMakeFiles/rpcppstub.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zxj/project/job_related/rpcpp/cmake-build-debug/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rpcpp/stub/CMakeFiles/rpcppstub.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zxj/project/job_related/rpcpp/cmake-build-debug/CMakeFiles 0
+.PHONY : rpcpp/stub/CMakeFiles/rpcppstub.dir/rule
+
+# Convenience name for target.
+rpcppstub: rpcpp/stub/CMakeFiles/rpcppstub.dir/rule
+
+.PHONY : rpcppstub
+
+# clean rule for target.
+rpcpp/stub/CMakeFiles/rpcppstub.dir/clean:
+	$(MAKE) $(MAKESILENT) -f rpcpp/stub/CMakeFiles/rpcppstub.dir/build.make rpcpp/stub/CMakeFiles/rpcppstub.dir/clean
+.PHONY : rpcpp/stub/CMakeFiles/rpcppstub.dir/clean
+
+#=============================================================================
+# Target rules for target example/echo/CMakeFiles/echoClient.dir
+
+# All Build rule for target.
+example/echo/CMakeFiles/echoClient.dir/all: rpcpp/CMakeFiles/rpcpp.dir/all
+	$(MAKE) $(MAKESILENT) -f example/echo/CMakeFiles/echoClient.dir/build.make example/echo/CMakeFiles/echoClient.dir/depend
+	$(MAKE) $(MAKESILENT) -f example/echo/CMakeFiles/echoClient.dir/build.make example/echo/CMakeFiles/echoClient.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zxj/project/job_related/rpcpp/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target echoClient"
+.PHONY : example/echo/CMakeFiles/echoClient.dir/all
+
+# Build rule for subdir invocation for target.
+example/echo/CMakeFiles/echoClient.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zxj/project/job_related/rpcpp/cmake-build-debug/CMakeFiles 18
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/echo/CMakeFiles/echoClient.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zxj/project/job_related/rpcpp/cmake-build-debug/CMakeFiles 0
+.PHONY : example/echo/CMakeFiles/echoClient.dir/rule
+
+# Convenience name for target.
+echoClient: example/echo/CMakeFiles/echoClient.dir/rule
+
+.PHONY : echoClient
+
+# clean rule for target.
+example/echo/CMakeFiles/echoClient.dir/clean:
+	$(MAKE) $(MAKESILENT) -f example/echo/CMakeFiles/echoClient.dir/build.make example/echo/CMakeFiles/echoClient.dir/clean
+.PHONY : example/echo/CMakeFiles/echoClient.dir/clean
+
+#=============================================================================
+# Target rules for target example/echo/CMakeFiles/echoService.dir
+
+# All Build rule for target.
+example/echo/CMakeFiles/echoService.dir/all: rpcpp/CMakeFiles/rpcpp.dir/all
+	$(MAKE) $(MAKESILENT) -f example/echo/CMakeFiles/echoService.dir/build.make example/echo/CMakeFiles/echoService.dir/depend
+	$(MAKE) $(MAKESILENT) -f example/echo/CMakeFiles/echoService.dir/build.make example/echo/CMakeFiles/echoService.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zxj/project/job_related/rpcpp/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target echoService"
+.PHONY : example/echo/CMakeFiles/echoService.dir/all
+
+# Build rule for subdir invocation for target.
+example/echo/CMakeFiles/echoService.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zxj/project/job_related/rpcpp/cmake-build-debug/CMakeFiles 18
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/echo/CMakeFiles/echoService.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zxj/project/job_related/rpcpp/cmake-build-debug/CMakeFiles 0
+.PHONY : example/echo/CMakeFiles/echoService.dir/rule
+
+# Convenience name for target.
+echoService: example/echo/CMakeFiles/echoService.dir/rule
+
+.PHONY : echoService
+
+# clean rule for target.
+example/echo/CMakeFiles/echoService.dir/clean:
+	$(MAKE) $(MAKESILENT) -f example/echo/CMakeFiles/echoService.dir/build.make example/echo/CMakeFiles/echoService.dir/clean
+.PHONY : example/echo/CMakeFiles/echoService.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -75,16 +75,29 @@ CMAKE_BINARY_DIR = /home/zxj/project/job_related/rpcpp/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/zxj/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/zxj/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/zxj/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
-.PHONY : rebuild_cache/fast
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/zxj/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/zxj/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -96,6 +109,39 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/zxj/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/zxj/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/zxj/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -139,35 +185,47 @@ rpcpp: cmake_check_build_system
 
 # fast build rule for target.
 rpcpp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpcpp.dir/build.make CMakeFiles/rpcpp.dir/build
+	$(MAKE) $(MAKESILENT) -f rpcpp/CMakeFiles/rpcpp.dir/build.make rpcpp/CMakeFiles/rpcpp.dir/build
 .PHONY : rpcpp/fast
 
-main.o: main.cpp.o
+#=============================================================================
+# Target rules for targets named rpcppstub
 
-.PHONY : main.o
+# Build rule for target.
+rpcppstub: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rpcppstub
+.PHONY : rpcppstub
 
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpcpp.dir/build.make CMakeFiles/rpcpp.dir/main.cpp.o
-.PHONY : main.cpp.o
+# fast build rule for target.
+rpcppstub/fast:
+	$(MAKE) $(MAKESILENT) -f rpcpp/stub/CMakeFiles/rpcppstub.dir/build.make rpcpp/stub/CMakeFiles/rpcppstub.dir/build
+.PHONY : rpcppstub/fast
 
-main.i: main.cpp.i
+#=============================================================================
+# Target rules for targets named echoClient
 
-.PHONY : main.i
+# Build rule for target.
+echoClient: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 echoClient
+.PHONY : echoClient
 
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpcpp.dir/build.make CMakeFiles/rpcpp.dir/main.cpp.i
-.PHONY : main.cpp.i
+# fast build rule for target.
+echoClient/fast:
+	$(MAKE) $(MAKESILENT) -f example/echo/CMakeFiles/echoClient.dir/build.make example/echo/CMakeFiles/echoClient.dir/build
+.PHONY : echoClient/fast
 
-main.s: main.cpp.s
+#=============================================================================
+# Target rules for targets named echoService
 
-.PHONY : main.s
+# Build rule for target.
+echoService: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 echoService
+.PHONY : echoService
 
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpcpp.dir/build.make CMakeFiles/rpcpp.dir/main.cpp.s
-.PHONY : main.cpp.s
+# fast build rule for target.
+echoService/fast:
+	$(MAKE) $(MAKESILENT) -f example/echo/CMakeFiles/echoService.dir/build.make example/echo/CMakeFiles/echoService.dir/build
+.PHONY : echoService/fast
 
 # Help Target
 help:
@@ -176,11 +234,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... echoClient"
+	@echo "... echoService"
 	@echo "... rpcpp"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... rpcppstub"
 .PHONY : help
 
 
