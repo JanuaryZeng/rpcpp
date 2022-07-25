@@ -1,0 +1,1 @@
+/usr/bin/c++  -O -Wall -g -ggdb -fpermissive CMakeFiles/echoClient.dir/echoClient.cpp.o -o ../../bin/echoClient  ../../lib/librpcpp.a -ljsoncpp -lpthread 

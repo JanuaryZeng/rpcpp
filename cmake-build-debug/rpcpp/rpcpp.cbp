@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="rpcpp"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\rpcpp\;CMake Files\rpcpp\stub\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\jsoncpp\;CMake Files\example\;CMake Files\example\echo\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rpcpp">
+				<Option output="/home/zxj/project/job_related/rpcpp/cmake-build-debug/lib/librpcpp.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/zxj/project/job_related/rpcpp"/>
+					<Add directory="/home/zxj/project/job_related/rpcpp/cmake-build-debug"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp/Makefile&quot;  VERBOSE=1 rpcpp"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rpcpp/fast">
+				<Option output="/home/zxj/project/job_related/rpcpp/cmake-build-debug/lib/librpcpp.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/zxj/project/job_related/rpcpp"/>
+					<Add directory="/home/zxj/project/job_related/rpcpp/cmake-build-debug"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp/Makefile&quot;  VERBOSE=1 rpcpp/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rpcppstub">
+				<Option output="/home/zxj/project/job_related/rpcpp/cmake-build-debug/bin/rpcppstub" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zxj/project/job_related/rpcpp/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/zxj/project/job_related/rpcpp"/>
+					<Add directory="/home/zxj/project/job_related/rpcpp/cmake-build-debug"/>
+					<Add directory="/home/zxj/project/job_related/rpcpp/rpcpp/stub/../../.."/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp/stub/Makefile&quot;  VERBOSE=1 rpcppstub"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp/stub/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp/stub/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp/stub/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rpcppstub/fast">
+				<Option output="/home/zxj/project/job_related/rpcpp/cmake-build-debug/bin/rpcppstub" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zxj/project/job_related/rpcpp/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/zxj/project/job_related/rpcpp"/>
+					<Add directory="/home/zxj/project/job_related/rpcpp/cmake-build-debug"/>
+					<Add directory="/home/zxj/project/job_related/rpcpp/rpcpp/stub/../../.."/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp/stub/Makefile&quot;  VERBOSE=1 rpcppstub/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp/stub/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp/stub/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/zxj/project/job_related/rpcpp/cmake-build-debug/rpcpp/stub/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/client/RpcClient.cpp">
+			<Option target="rpcpp"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/client/RpcClient.h">
+			<Option target="rpcpp"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/client/RpcProtocolClient.cpp">
+			<Option target="rpcpp"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/client/RpcProtocolClient.h">
+			<Option target="rpcpp"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/client/connectors/LinuxTcpSocketClient.cpp">
+			<Option target="rpcpp"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/client/connectors/LinuxTcpSocketClient.h">
+			<Option target="rpcpp"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/client/connectors/TcpSocketClient.cpp">
+			<Option target="rpcpp"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/client/connectors/TcpSocketClient.h">
+			<Option target="rpcpp"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/client/connectors/WindowsTcpSocketClient.cpp">
+			<Option target="rpcpp"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/client/connectors/WindowsTcpSocketClient.h">
+			<Option target="rpcpp"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/common/Errors.cpp">
+			<Option target="rpcpp"/>
+			<Option target="rpcppstub"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/common/Errors.h">
+			<Option target="rpcpp"/>
+			<Option target="rpcppstub"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/common/Message.cpp">
+			<Option target="rpcpp"/>
+			<Option target="rpcppstub"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/common/Message.h">
+			<Option target="rpcpp"/>
+			<Option target="rpcppstub"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/common/Poller.cpp">
+			<Option target="rpcpp"/>
+			<Option target="rpcppstub"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/common/Poller.h">
+			<Option target="rpcpp"/>
+			<Option target="rpcppstub"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/common/RpcException.cpp">
+			<Option target="rpcpp"/>
+			<Option target="rpcppstub"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/common/RpcException.h">
+			<Option target="rpcpp"/>
+			<Option target="rpcppstub"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/common/StreamReader.cpp">
+			<Option target="rpcpp"/>
+			<Option target="rpcppstub"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/common/StreamReader.h">
+			<Option target="rpcpp"/>
+			<Option target="rpcppstub"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/common/StreamWriter.cpp">
+			<Option target="rpcpp"/>
+			<Option target="rpcppstub"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/common/StreamWriter.h">
+			<Option target="rpcpp"/>
+			<Option target="rpcppstub"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/server/IServerConnector.cpp">
+			<Option target="rpcpp"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/server/IServerConnector.h">
+			<Option target="rpcpp"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/server/RpcProtocolServer.cpp">
+			<Option target="rpcpp"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/server/RpcProtocolServer.h">
+			<Option target="rpcpp"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/server/RpcServer.cpp">
+			<Option target="rpcpp"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/server/RpcServer.h">
+			<Option target="rpcpp"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/server/connectors/LinuxTcpSocketServer.cpp">
+			<Option target="rpcpp"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/server/connectors/LinuxTcpSocketServer.h">
+			<Option target="rpcpp"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/stub/ClientStubGenerator.cpp">
+			<Option target="rpcppstub"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/stub/ClientStubGenerator.h">
+			<Option target="rpcppstub"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/stub/ServiceStubGenerator.cpp">
+			<Option target="rpcppstub"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/stub/ServiceStubGenerator.h">
+			<Option target="rpcppstub"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/stub/StubGenerator.cpp">
+			<Option target="rpcppstub"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/stub/StubGenerator.h">
+			<Option target="rpcppstub"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/stub/main.cpp">
+			<Option target="rpcppstub"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\rpcpp\"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/rpcpp/stub/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\rpcpp\stub\"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/../../../../../usr/lib/x86_64-linux-gnu/cmake/jsoncpp/jsoncppConfig-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\jsoncpp\"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/../../../../../usr/lib/x86_64-linux-gnu/cmake/jsoncpp/jsoncppConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\jsoncpp\"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/example/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\example\"/>
+		</Unit>
+		<Unit filename="/home/zxj/project/job_related/rpcpp/example/echo/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\example\echo\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
