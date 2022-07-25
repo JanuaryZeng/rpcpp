@@ -7,6 +7,3 @@ rpcpp是一个简单的RPC框架，采用JSON格式的序列化/反序列化方�
 uml 类图
 
 <img src="UMLclassdiagrams.png" width="90%">
-
-
-# 使用
